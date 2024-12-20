@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CJ's LMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style2.css" />
+  <link rel="stylesheet" href="/css/util.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"/>
+</head>
+
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/html/index.html">
+                    <img src="/images/LMSImages/logo.png" alt="CJ's LMS Logo" />
+                </a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <img class="icon-hamburger" src="/images/LMSImages/icon-hamburger.svg" alt="Menu" aria-hidden="true" />
+                    <img class="icon-close" src="/images/LMSImages/icon-close.svg" alt="Close Menu" aria-hidden="true" />
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-navigation" id="primary-navigation">
+                    <ul aria-label="Primary" role="list" class="nav-list">
+                      <li><a href="/html/pricing.html">Pricing</a></li>
+                      <li><a href="#">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Practice</a></li>
+                    </ul>
+                </nav>
+                <a href="/html/loginpage.html">
+                    <button class="button | display-sm-none display-md-inline-flex">Login</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="padding-block-900">
+            <div class="container" style="background-color: var(--clr-neutral-200); border-radius: 1rem;">
+                <div class="section padding-block-700 | text-center">
+                    <h2 class="fs-secondary-heading | fw-bold" style="padding-bottom: 1rem; color: var(--clr-accent-200);">Login</h2>
+                    <p class="fs-400 text-primary-400">Welcome back! Please log in to continue your learning journey.</p>
+                </div>
+
+                <!-- login form -->
+              <section>
+                <div class="padding-block-400 | text-center">
+                  <form action="login_process.php" method="POST" class="flow">
+                      <div class="flow" style="--flow-spacer: 1rem">
+                          <label for="username" class="fw-regular fs-500 text-neutral-900">Username: </label>
+                          <input type="text" id="username" name="username" class="input-field" required />
+                      </div>
+              
+                      <div class="flow" style="--flow-spacer: 1rem">
+                          <label for="password" class="fw-regular fs-500 text-neutral-900">Password: </label>
+                          <input type="password" id="password" name="password" class="input-field" required />
+                      </div>
+                      <div class="flow" style="--flow-spacer: 1rem">
+                          <button type="submit" class="button | display-sm-none display-md-inline-flex">Log In</button>
+                      </div>
+
+                      <section class="reset-signup">
+                        <div class="flow text-center" style="padding-bottom: 2rem;">
+                            <p>
+                                <a href="#" class="text-accent-400">Forgot your password?</a>
+                            </p>
+                            <p>
+                                Don't have an account? <a href="/html/signup.html" class="text-accent-400">Sign Up</a>
+                            </p>
+                        </div>
+                      </section>
+                  </form>
+                </div>                
+              </section>
+            </div>
+        </section>
+    </main>
+
+    <footer
+      class="primary-footer | padding-block-700 | bg-neutral-900 | text-neutral-100"
+    >
+      <div class="container">
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="social-list" role="list" aria-label="Social links">
+              <li>
+                <a aria-label="facebook" href="#"></a>
+                <i class="fi fi-brands-facebook"> Facebook</i>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="twitter" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="pinterest" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="instragram" href="#">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <i class="fi fi-brands-instagram"> Instagram</i>
+              </li>
+            </ul>
+          </div>
+          <div class="primary-footer-nav">
+            <nav class="footer-nav">
+              <ul
+                class="flow"
+                style="--flow-spacer: 1em"
+                aria-label="Footer"
+                role="list"
+              >
+              <li><a href="/html/pricing.html">Pricing</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="primary-footer-form">
+            <form action="">
+              <input type="email" />
+              <button class="button" data-shadow="none">Go</button>
+            </form>
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
